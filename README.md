@@ -1,12 +1,12 @@
-Employee React Application
+#Employee React Application
 
-Project Overview
+##Project Overview
 
     This project is a React-based web application for managing employee-related data and tasks. It uses a combination of modern libraries and tools to deliver a responsive, scalable, and user-friendly experience. The application includes features such as form handling, routing, and API integration with Express and MongoDB.
 
-Features
+###Features
 
-Frontend:
+####Frontend:
 
     ->React with functional components and hooks
 
@@ -16,7 +16,7 @@ Frontend:
 
     ->Styling with Bootstrap and Bootstrap Icons
 
-Backend:
+####Backend:
 
     ->Express server for API handling
 
@@ -24,7 +24,7 @@ Backend:
 
     ->File uploads using Multer
 
-Additional Tools:
+####Additional Tools:
 
     ->Axios for HTTP requests
 
@@ -32,9 +32,9 @@ Additional Tools:
 
     ->Unit testing using React Testing Library and Jest
 
-Installation
+##Installation
 
-Prerequisites
+###Prerequisites
 
 Ensure you have the following installed on your system:
 
@@ -42,7 +42,7 @@ Ensure you have the following installed on your system:
 
     ->npm (v8 or higher)
 
-Steps
+###Steps
 
 1. Clone the repository:
 
@@ -60,7 +60,7 @@ Steps
 4. Open the application in your browser at http://localhost:3000.
 
 
-Scripts
+###Scripts
 
 The project includes the following npm scripts:
 
@@ -73,7 +73,7 @@ The project includes the following npm scripts:
     ->eject: Ejects the configuration (use with caution).
 
 
-File Structure
+###File Structure
 
 employee-react/
 ├── public/           # Public files
@@ -87,9 +87,9 @@ employee-react/
 ├── README.md         # Project documentation
 └── ...
 
-Dependencies
+###Dependencies
 
-Main Dependencies
+###Main Dependencies
 
     ->react: ^18.3.1
 
@@ -109,20 +109,20 @@ Main Dependencies
 
     ->mongodb: ^6.12.0
 
-Dev Dependencies
+###Dev Dependencies
 
     ->eslint: ^8.57.1
 
     ->eslint-plugin-react: ^7.37.3
 
-Testing
+###Testing
 
 Testing is done using the React Testing Library and Jest.
 Run the test suite with:
 
     npm test
 
-Contribution
+###Contribution
 
 Feel free to contribute to this project by submitting issues or pull requests. Follow these steps to contribute:
 
@@ -135,7 +135,7 @@ Feel free to contribute to this project by submitting issues or pull requests. F
     4. Push to your fork and submit a pull request.
 
 
-Acknowledgments
+###Acknowledgments
 
     ->React
 
