@@ -13,8 +13,9 @@ export function EmployeeList() {
     
 // Fetch employees and handle authentication
     useEffect(() => {
-        if (!cookies["userName"]) {
+        if (cookies["userName"]===undefined) {
             navigate("/login");
+            
         }
         axios
             .get("http://127.0.0.1:5001/empDetail")

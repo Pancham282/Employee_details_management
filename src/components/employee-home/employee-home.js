@@ -5,13 +5,14 @@ import { useNavigate, Link } from "react-router-dom";
 
 export function HomeComponent() {
   const navigate = useNavigate();
-  const [cookies] = useCookies(); // Added unused `removeCookies` as a placeholder for future functionality
+  const [cookies] = useCookies(); 
 
   useEffect(() => {
-    if (!cookies["userName"]) {
+    if (cookies["userName"]===undefined) {
       navigate("/login");
     }
-  }, [cookies, navigate]);
+  }, []); 
+  
 
   return (
     <div className="container-fluid d-flex justify-content-between">

@@ -8,10 +8,16 @@ import { EmployeeUpdate } from "../employee-update/employee-update.js";
 import { useCookies } from "react-cookie";
 import { HomeComponent } from "../employee-home/employee-home.js";
 import { SignoutClick } from "../employee-signout/employee-signout.js";
+import { useEffect } from "react";
 
 export function EmployeeIndex() {
   const [cookies, removeCookies] = useCookies(["userName"]);
   const navigate = useNavigate();
+  useEffect(() => {
+    if (cookies["userName"]===undefined) {
+          navigate("/login");
+    }
+  },[]);
 
   return (
     <div className="container-fluid">
@@ -55,7 +61,7 @@ export function EmployeeIndex() {
           <Route path="/create" element={<EmployeeCreate />} />
           <Route path="/empdetails/:id" element={<EmployeeDetails />} />
           <Route path="/updateEmpdetail/:id" element={<EmployeeUpdate />} />
-          <Route path="*" element={<EmployeeInvalid />} /> {/* Catch-all for undefined routes */}
+          {/* <Route path="*" element={<EmployeeInvalid />} /> Catch-all for undefined routes */}
 
         </Routes>
       </main>
